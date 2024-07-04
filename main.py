@@ -17,7 +17,7 @@ client.create_bucket(bucket_id, event_type="app.editor.activity")
 file = open(filepath, "r")
 obj = json.load(file)
 
-# increase this only if not all events are being sent
+# decrease this only if not all events are being sent
 sleep_after_events = 100
 count = 0
 
